@@ -1,9 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Question : MonoBehaviour
+[System.Serializable]
+public class Question
 {
-    public string text;
-    public int answer;
+    public string questionText;
+    public int correctAnswer;
+    public string answerText1;
+    public string answerText2;
+    public string answerText3;
 }
