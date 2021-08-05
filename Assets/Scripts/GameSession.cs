@@ -5,16 +5,32 @@ using TMPro;
 
 public class GameSession : MonoBehaviour
 {
-    public Question[] questionArr;
-    private Question outputQuestion;
-    public TextMeshProUGUI questionText;
-    private void Start()
-    {
-        outputQuestion = ChooseRandomQuestion();
-        questionText.SetText(outputQuestion.questionText);
-    }
-    Question ChooseRandomQuestion() {
-        return questionArr[Random.Range(0, questionArr.Length)];
-    }
+    public int questionNumber = 1;
+    public int questionsCorrect = 0;
     
+    public Question[] questionArr;
+    public Question currentQuestion;
+
+    
+    private void Awake() {
+        int gameStatusCount = FindObjectsOfType<GameSession>().Length;
+        if (gameStatusCount > 1)
+        {
+            RestartGame();
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+    private void RestartGame() {
+        gameObject.SetActive(false);
+        Destroy(gameObject);
+    }
+    private void Start() {
+        NextQuestion();
+    }
+    public void NextQuestion() {
+        currentQuestion = questionArr[Random.Range(0, questionArr.Length)];
+    }
 }

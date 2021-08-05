@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &18262277060289739
+--- !u!1 &6927277440080844695
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4669542277779243094}
-  - component: {fileID: 2161553102307135440}
+  - component: {fileID: 4412739043482739380}
+  - component: {fileID: 5068165955919705759}
   m_Layer: 0
-  m_Name: GameSession
+  m_Name: QuestionManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4669542277779243094
+--- !u!4 &4412739043482739380
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18262277060289739}
+  m_GameObject: {fileID: 6927277440080844695}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,28 +31,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2161553102307135440
+--- !u!114 &5068165955919705759
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18262277060289739}
+  m_GameObject: {fileID: 6927277440080844695}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5929d55445189db45a772422bb6827a6, type: 3}
+  m_Script: {fileID: 11500000, guid: cc2ab5b3aa8a8904d8d6e18307e0bcee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionsAnswered: 0
-  questionsCorrect: 0
   questionArr:
   - questionText: "What are \u2018waterborne diseases?\u2019"
     correctAnswer: 2
     answerText1: Diseases that make water accumulate in the body
     answerText2: Diseases that are transmitted through polluted water
-    answerText3: Diseases that come from animals living in water
+    answerText3: 'Diseases that come from animals living in water '
   - questionText: "What percentage of the world\u2019s population has access to clean
-      drinking water? "
+      drinking water?"
     correctAnswer: 3
     answerText1: 40%
     answerText2: 60%
@@ -62,7 +60,7 @@ MonoBehaviour:
     answerText1: 0.3%
     answerText2: 3%
     answerText3: 30%
-  - questionText: 'Approximately how much of the human body is water? '
+  - questionText: Approximately how much of the human body is water?
     correctAnswer: 1
     answerText1: 45%
     answerText2: 65%
@@ -73,7 +71,7 @@ MonoBehaviour:
     answerText1: 50%
     answerText2: 80%
     answerText3: 100%
-  - questionText: 'How much bigger is the water usage now compared to 50 years ago? '
+  - questionText: How much bigger is the water usage now compared to 50 years ago?
     correctAnswer: 2
     answerText1: 2 times as big
     answerText2: 3 times as big
@@ -81,8 +79,8 @@ MonoBehaviour:
   - questionText: How many people in the world suffered from lack of clean drinking
       water in 2009?
     correctAnswer: 3
-    answerText1: 'More than 100,000 '
-    answerText2: 'More than 1,000,000 '
+    answerText1: More than 100,000
+    answerText2: More than 1,000,000
     answerText3: More than 11,000,000,000
   - questionText: Is groundwater a renewable resource?
     correctAnswer: 3
@@ -94,8 +92,8 @@ MonoBehaviour:
   - questionText: Which of the following disease can be caused by drinking contaminated
       water?
     correctAnswer: 1
-    answerText1: ' Hepatitis'
-    answerText2: HIV
+    answerText1: Hepatitis
+    answerText2: 'HIV '
     answerText3: Tuberculosis
   - questionText: Which of the following disease can be caused by drinking contaminated
       water?
@@ -103,9 +101,7 @@ MonoBehaviour:
     answerText1: Malaria
     answerText2: Cholera
     answerText3: Meningitis
-  currentQuestion:
-    questionText: 
-    correctAnswer: 0
-    answerText1: 
-    answerText2: 
-    answerText3: 
+  questionText: {fileID: 0}
+  answerText1: {fileID: 0}
+  answerText2: {fileID: 0}
+  answerText3: {fileID: 0}
