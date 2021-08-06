@@ -18,17 +18,18 @@ public class GameSession : MonoBehaviour
         int gameStatusCount = FindObjectsOfType<GameSession>().Length;
         if (gameStatusCount > 1)
         {
-            RestartGame();
+            RestartGameStatus();
         }
         else
         {
             DontDestroyOnLoad(gameObject);
         }
     }
-    private void RestartGame() {
+    private void RestartGameStatus() {
         gameObject.SetActive(false);
         Destroy(gameObject);
     }
+    //  MOVE THESE
     private void Start() {
         NextQuestion();
     }

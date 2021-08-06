@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class QuizButton : MonoBehaviour
 {
-    SceneLoader sceneLoader;
-    private void Start()
-    {
-        sceneLoader = FindObjectOfType<SceneLoader>();
-    }
     private void OnCollisionEnter2D(Collision2D collision) {
         Player player = collision.gameObject.GetComponent<Player>();
         if (!player)
@@ -17,7 +12,7 @@ public class QuizButton : MonoBehaviour
         }
         else
         {
-            sceneLoader.LoadAnswerScene();
+            FindObjectOfType<SceneLoader>().LoadAnswerScene();
         }
     }
 }
