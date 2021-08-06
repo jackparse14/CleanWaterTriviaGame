@@ -7,11 +7,13 @@ public class GameSession : MonoBehaviour
 {
     public int questionNumber = 1;
     public int questionsCorrect = 0;
-    
-    public Question[] questionArr;
+    public int questionsPerQuiz;
+
+    public List<Question> questionList = new List<Question>();
+    public List<Question> questionListChosen = new List<Question>();
+
     public Question currentQuestion;
 
-    
     private void Awake() {
         int gameStatusCount = FindObjectsOfType<GameSession>().Length;
         if (gameStatusCount > 1)
@@ -31,6 +33,7 @@ public class GameSession : MonoBehaviour
         NextQuestion();
     }
     public void NextQuestion() {
-        currentQuestion = questionArr[Random.Range(0, questionArr.Length)];
+        int randQuestionIndex = Random.Range(0, questionList.Count);
+        currentQuestion = questionList[randQuestionIndex];
     }
 }

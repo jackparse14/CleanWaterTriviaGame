@@ -10,6 +10,6 @@ public class DisplayScore : MonoBehaviour
     void Start()
     {
         gameStatus = FindObjectOfType<GameSession>();
-        scoreText.SetText(gameStatus.questionsCorrect.ToString() + "/10");
+        scoreText.SetText(gameStatus.questionsCorrect.ToString() + "/" + gameStatus.questionsPerQuiz.ToString());
     }
 }
