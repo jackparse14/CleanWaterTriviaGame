@@ -10,7 +10,7 @@ public class PrefsController : MonoBehaviour
     const float MAX_VOLUME = 0.1f;
 
     const int MIN_QUESTIONS = 5;
-    const int MAX_QUESTIONS = 10;
+    const int MAX_QUESTIONS = 30;
 
     public static void SetMasterVolume(float volume)
     {
