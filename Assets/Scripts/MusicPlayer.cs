@@ -8,13 +8,13 @@ public class MusicPlayer : MonoBehaviour
     void Start()
     {
         int musicPlayerCount = FindObjectsOfType<MusicPlayer>().Length;
-        //if (musicPlayerCount > 1)
-        //{
-        //    RestartMusicPlayer();
-        //}
-        //else {
+        if (musicPlayerCount > 1)
+        {
+            RestartMusicPlayer();
+        }
+        else {
             DontDestroyOnLoad(this);
-        //}
+        }
 
         audioSource = GetComponent<AudioSource>();
         audioSource.volume = PrefsController.GetMasterVolume();

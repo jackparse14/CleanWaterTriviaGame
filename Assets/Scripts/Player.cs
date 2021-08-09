@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     [SerializeField] LayerMask ground;
     [SerializeField] float runSpeed;
     [SerializeField] float jumpSpeed;
+    [SerializeField] AudioClip jumpSFX;
+    [SerializeField] [Range(0, 1)] float jumpSFXVolume;
     Rigidbody2D myRigidBody;
     BoxCollider2D boxCollider;
     void Start()
@@ -31,7 +33,8 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Space) && boxCollider.IsTouchingLayers(ground))
         {
-                myRigidBody.velocity = Vector2.up * jumpSpeed;
+            AudioSource.PlayClipAtPoint(jumpSFX, Camera.main.transform.position, jumpSFXVolume);
+            myRigidBody.velocity = Vector2.up * jumpSpeed;
         }
     }
 }

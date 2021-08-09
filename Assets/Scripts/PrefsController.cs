@@ -31,7 +31,7 @@ public class PrefsController : MonoBehaviour
     public static void SetQuestionsPerQuiz(int questions) {
         if (questions >= MIN_QUESTIONS && questions <= MAX_QUESTIONS)
         {
-            PlayerPrefs.SetFloat(QUESTIONS_PER_QUIZ_KEY, questions);
+            PlayerPrefs.SetInt(QUESTIONS_PER_QUIZ_KEY, questions);
         }
         else
         {

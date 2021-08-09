@@ -37,4 +37,8 @@ public class GameSession : MonoBehaviour
         int randQuestionIndex = Random.Range(0, questionList.Count);
         currentQuestion = questionList[randQuestionIndex];
     }
+    public void SetQPQ(int qpq)
+    {
+        questionsPerQuiz = qpq;
+    }
 }

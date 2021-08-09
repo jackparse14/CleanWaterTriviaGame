@@ -7,7 +7,7 @@ public class QuestionManager : MonoBehaviour
 {
     public TextMeshProUGUI questionText;
     public TextMeshProUGUI questionNumText;
-    
+
     public TextMeshProUGUI answerText1;
     public TextMeshProUGUI answerText2;
     public TextMeshProUGUI answerText3;
@@ -18,10 +18,10 @@ public class QuestionManager : MonoBehaviour
     private SceneLoader sceneLoader;
     private void Start()
     {
+
         gameStatus = FindObjectOfType<GameSession>();
         sceneLoader = FindObjectOfType<SceneLoader>();
         OutputQuestion();
-        
         if (gameStatus.questionNumber == 1) {
             gameStatus.questionsCorrect = 0;
         }
@@ -35,7 +35,7 @@ public class QuestionManager : MonoBehaviour
         gameStatus.questionListChosen.Add(gameStatus.currentQuestion);
         gameStatus.questionList.Remove(gameStatus.currentQuestion);
 
-        if (gameStatus.questionNumber == gameStatus.questionsPerQuiz+1)
+        if (gameStatus.questionNumber == gameStatus.questionsPerQuiz + 1)
         {
             ResetQuestions();
             gameStatus.questionNumber = 1;
@@ -43,13 +43,14 @@ public class QuestionManager : MonoBehaviour
         }
         else
         {
+            sceneLoader.PlayChangeSceneSound();
             gameStatus.NextQuestion();
             OutputQuestion();
         }
     }
     private void ResetQuestions()
     {
-        for (int i = 0; i < gameStatus.questionListChosen.Count;i++) {
+        for (int i = 0; i < gameStatus.questionListChosen.Count; i++) {
             gameStatus.questionList.Add(gameStatus.questionListChosen[i]);
         }
         gameStatus.questionListChosen.Clear();
@@ -67,4 +68,5 @@ public class QuestionManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         cooldownFinished = true;
     }
+    
 }
