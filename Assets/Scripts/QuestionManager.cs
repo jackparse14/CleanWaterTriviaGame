@@ -18,7 +18,6 @@ public class QuestionManager : MonoBehaviour
     private SceneLoader sceneLoader;
     private void Start()
     {
-
         gameStatus = FindObjectOfType<GameSession>();
         sceneLoader = FindObjectOfType<SceneLoader>();
         OutputQuestion();
@@ -34,7 +33,7 @@ public class QuestionManager : MonoBehaviour
 
         gameStatus.questionListChosen.Add(gameStatus.currentQuestion);
         gameStatus.questionList.Remove(gameStatus.currentQuestion);
-
+        gameStatus.NextQuestion();
         if (gameStatus.questionNumber == gameStatus.questionsPerQuiz + 1)
         {
             ResetQuestions();
@@ -44,7 +43,6 @@ public class QuestionManager : MonoBehaviour
         else
         {
             sceneLoader.PlayChangeSceneSound();
-            gameStatus.NextQuestion();
             OutputQuestion();
         }
     }
