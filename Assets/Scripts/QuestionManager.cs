@@ -42,7 +42,7 @@ public class QuestionManager : MonoBehaviour
         }
         else
         {
-            sceneLoader.PlayChangeSceneSound();
+            StartCoroutine(sceneLoader.PlayChangeSceneSound());
             OutputQuestion();
         }
     }

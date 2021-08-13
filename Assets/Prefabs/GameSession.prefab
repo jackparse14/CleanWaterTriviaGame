@@ -52,44 +52,43 @@ MonoBehaviour:
     answerText1: Diseases that make water accumulate in the body
     answerText2: Diseases that are transmitted through polluted water
     answerText3: Diseases that come from animals living in water
-  - questionText: "What percentage of the world\u2019s population has access to clean
-      drinking water?"
+  - questionText: What percentage of the world has access to clean drinking water?
     correctAnswer: 3
-    answerText1: 40%
-    answerText2: 60%
-    answerText3: 80%
+    answerText1: 45%
+    answerText2: 59%
+    answerText3: 71%
   - questionText: How much of the water on Earth can be used as drinking water?
     correctAnswer: 1
-    answerText1: 0.3%
-    answerText2: 3%
-    answerText3: 30%
+    answerText1: 0.4%
+    answerText2: 1%
+    answerText3: 3.4%
   - questionText: Approximately how much of the human body is water?
     correctAnswer: 1
-    answerText1: 45%
-    answerText2: 65%
+    answerText1: 70%
+    answerText2: 75%
     answerText3: 85%
   - questionText: What percentage of diseases in developing countries are caused
       by poor water conditions?
     correctAnswer: 2
     answerText1: 50%
     answerText2: 80%
-    answerText3: 100%
-  - questionText: How much bigger is the water usage now compared to 50 years ago?
+    answerText3: 95%
+  - questionText: How much bigger is the freshwater usage now compared to 50 years
+      ago?
     correctAnswer: 2
-    answerText1: '2 times as big '
-    answerText2: 4 times as big
-    answerText3: 6 times as big
+    answerText1: '1.5 times as big '
+    answerText2: 2 times as big
+    answerText3: 5 times as big
   - questionText: How many people in the world suffered from lack of clean drinking
-      water in 2009?
+      water in 2020?
     correctAnswer: 3
-    answerText1: 100,000
-    answerText2: 1,000,000
-    answerText3: 11,000,000,000
+    answerText1: 785,000
+    answerText2: 78,500,000
+    answerText3: 785,000,000
   - questionText: Is groundwater a renewable resource?
     correctAnswer: 3
-    answerText1: Yes; the amount of ground water increases significantly every time
-      it rains
-    answerText2: No; new groundwater is not produced
+    answerText1: Yes; groundwater increases every time it rains
+    answerText2: No;  groundwater is not produced
     answerText3: Yes and no; groundwater is currently being used more quickly than
       it is being produced
   - questionText: Which of the following disease can be caused by drinking contaminated
@@ -104,127 +103,116 @@ MonoBehaviour:
     answerText1: Malaria
     answerText2: Cholera
     answerText3: Meningitis
-  - questionText: "Contaminated water can be made into drinking water by boiling
-      it or by\u2026?"
+  - questionText: What kind of tablets turn contaminated water into clean water?
     correctAnswer: 1
     answerText1: Adding chlorine tablets
     answerText2: Adding calcium tablets
-    answerText3: Pouring it through a coffee filter
+    answerText3: Addng iron tablets
   - questionText: "How many liters of water are needed to produce one person\u2019s
       daily food intake?"
     correctAnswer: 3
-    answerText1: At least 20 liters
-    answerText2: At least 200 liters
-    answerText3: At least 2000 liters
+    answerText1: 20 to 50 litres
+    answerText2: 200 to 500 litres
+    answerText3: 2000 to 5000 litres
   - questionText: How much of the water that is used world-wide is used for food
       production?
     correctAnswer: 3
-    answerText1: 20%
+    answerText1: 30%
     answerText2: 50%
     answerText3: 70%
-  - questionText: How big a share of the world population does not have access to
-      clean water?
+  - questionText: What fraction of the world does not have access to clean water?
     correctAnswer: 2
-    answerText1: More than a third
-    answerText2: More than a sixth
-    answerText3: More than a ninth
-  - questionText: According to UNICEF, Malaria is the illness that kills most children
-      under the age of 5, world-wide. What illness kills second-most?
+    answerText1: 1/6
+    answerText2: 1/3
+    answerText3: 1/2
+  - questionText: What illness kills the most children under the age of 5?
     correctAnswer: 2
-    answerText1: The flu
-    answerText2: Diarrhea
-    answerText3: Mononucleosis
-  - questionText: Can a lack of clean water and toilets prevent a child from going
-      to school?
+    answerText1: Diarrhea
+    answerText2: Pneumonia
+    answerText3: Tuberculosis
+  - questionText: Can a lack of clean water prevent a child from going to school?
     correctAnswer: 1
     answerText1: Yes
     answerText2: No
     answerText3: Not Sure
-  - questionText: How many liters of tap-water does the average European use a day?
+  - questionText: On average, how many litres of tap-water does the average European
+      use a day?
     correctAnswer: 2
-    answerText1: About 100 liters
-    answerText2: About 150 liters
-    answerText3: About 200 liters
-  - questionText: What percentage of the world population still lacks access to proper
-      toilets and a proper sewer-system?
+    answerText1: 99 litres
+    answerText2: 144 litres
+    answerText3: 190 litres
+  - questionText: What percentage of the world lacks access to safe toilets?
     correctAnswer: 2
-    answerText1: 29%
-    answerText2: 39%
-    answerText3: 49%
+    answerText1: 30%
+    answerText2: 60%
+    answerText3: 70%
   - questionText: What is the primary reason for why many water-projects in developing
       countries fail?
     correctAnswer: 1
     answerText1: Lack of maintenance
     answerText2: Corruption in the country
     answerText3: Nobody uses them
-  - questionText: Food production requires a lot of water. How much water is used
-      to produce a hamburger?
+  - questionText: How much water is used to produce one hamburger?
     correctAnswer: 3
-    answerText1: 24 liters
-    answerText2: 240 liters
-    answerText3: 2400 liters
-  - questionText: What percentage of the citizens of rural Nepal had access to clean
-      water in 2008?
+    answerText1: 24 litres
+    answerText2: 240 litres
+    answerText3: 2400 litres
+  - questionText: What percentage of the population in Nepal had access to clean
+      water in 2019?
     correctAnswer: 3
-    answerText1: 34%
-    answerText2: 68%
-    answerText3: 91%
-  - questionText: On average, how much time does an African woman spend a day getting
-      water?
+    answerText1: 35%
+    answerText2: 74%
+    answerText3: 89%
+  - questionText: How much time do African women as a whole spend getting water per
+      year?
     correctAnswer: 3
-    answerText1: 4 minutes
-    answerText2: 40 minutes
-    answerText3: 4 hours
-  - questionText: According to the UN, how much clean water does a person need per
-      day to cover their basic daily needs (i.e. for drinking, sanitation, dish-washing,
-      etc.)?
-    correctAnswer: 3
-    answerText1: 5-10 liters a day
-    answerText2: 10-30 liters a day
-    answerText3: 20-50 liters a day
+    answerText1: 40,000 hours
+    answerText2: 40,000,000 hours
+    answerText3: 40,000,000,000 hours
+  - questionText: In developing countries, what percentage of health care facilities
+      have no water service?
+    correctAnswer: 1
+    answerText1: 22%
+    answerText2: 33%
+    answerText3: 44%
   - questionText: What is the biggest threat to groundwater?
     correctAnswer: 3
-    answerText1: 'Climate changes: less rain means less groundwater'
-    answerText2: 'Population growth: There are more and more people who need to share
-      a limited amount of groundwater'
-    answerText3: 'Agriculture and industry: Insecticides and chemicals pollute the
-      groundwater'
-  - questionText: On average, how many liters of water does a person living in a
-      developing country have access to?
-    correctAnswer: 1
-    answerText1: 10 liters per day
-    answerText2: 30 liters per day
-    answerText3: 60 liters per day
+    answerText1: Climate changes
+    answerText2: Population growth
+    answerText3: Agriculture and industry
+  - questionText: By 2025, how much of the worlds population will be living in water-stressed
+      areas?
+    correctAnswer: 2
+    answerText1: 1/3
+    answerText2: 1/2
+    answerText3: 2/3
   - questionText: Is new groundwater produced?
     correctAnswer: 1
     answerText1: Yes
     answerText2: No
     answerText3: Not Sure
-  - questionText: 'True or false: In 2006, more than 400 million children lacked
-      access to clean drinking-water?'
-    correctAnswer: 1
-    answerText1: True
-    answerText2: False
-    answerText3: Not Sure
+  - questionText: Contaminated drinking water causes how many deaths from diarrhoea
+      a year?
+    correctAnswer: 3
+    answerText1: 129,000
+    answerText2: 327,000
+    answerText3: 485,000
   - questionText: How can you improve the drinking-water in polluted areas?
     correctAnswer: 2
     answerText1: Fertilize the ground with calcium so it seeps through and purifies
       the groundwater
     answerText2: Plant trees with deep roots
     answerText3: Once the groundwater is polluted, it is too late to do anything
-  - questionText: In 2011, we were about 6,9 billion people on Earth. How many people
-      lived without access to toilets and sewerage?
-    correctAnswer: 3
-    answerText1: About 260.000 people
-    answerText2: About 2.6 million people
-    answerText3: About 2.6 billion people
-  - questionText: The Food and Agriculture Organization of the United Nations (FAO)
-      believes that many developing countries will lack water before the end of 2030.
-      How many developing countries does FAO believe will lack water?
+  - questionText: What percentage of schools don't have clean water?
     correctAnswer: 1
-    answerText1: 1 in 5 developing countries
-    answerText2: 1 in 3 developing countries
-    answerText3: Every developing country
+    answerText1: 31%
+    answerText2: 39%
+    answerText3: 45%
+  - questionText: How many children die from diarrhoea a day ?
+    correctAnswer: 2
+    answerText1: 250
+    answerText2: 700
+    answerText3: 1500
   questionListChosen: []
   currentQuestion:
     questionText: 

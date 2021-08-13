@@ -11,17 +11,17 @@ public class LinkManager : MonoBehaviour
     }
     public void OpenWaterProject()
     {
-        sceneLoader.PlayChangeSceneSound();
+        StartCoroutine(sceneLoader.PlayChangeSceneSound());
         Application.OpenURL("https://thewaterproject.org/why-water/health");
     }
     public void OpenBorgenMagazine()
     {
-        sceneLoader.PlayChangeSceneSound();
+        StartCoroutine(sceneLoader.PlayChangeSceneSound());
         Application.OpenURL("https://www.borgenmagazine.com/10-clean-water-solutions/");
     }
     public void OpenWorldVision()
     {
-        sceneLoader.PlayChangeSceneSound();
+        StartCoroutine(sceneLoader.PlayChangeSceneSound());
         Application.OpenURL("https://www.worldvision.org/clean-water-news-stories/walk-water-6k");
     }
 }

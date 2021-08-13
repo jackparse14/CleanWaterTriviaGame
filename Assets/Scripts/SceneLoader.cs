@@ -13,30 +13,36 @@ public class SceneLoader : MonoBehaviour
     }
     public void LoadAnswerScene()
     {
-        PlayChangeSceneSound();
+        StartCoroutine(PlayChangeSceneSound());
         SceneManager.LoadScene("AnswerScene");
+        
     }
     public void LoadMainMenuScene()
     {
-        PlayChangeSceneSound();
+        StartCoroutine(PlayChangeSceneSound());
         SceneManager.LoadScene("MainMenuScene");
+        
     }
     public void LoadLearnScene()
     {
-        PlayChangeSceneSound();
+        StartCoroutine(PlayChangeSceneSound());
         SceneManager.LoadScene("LearnScene");
+        
     }
     public void LoadOptionsScene()
     {
-        PlayChangeSceneSound();
+        StartCoroutine(PlayChangeSceneSound());
         SceneManager.LoadScene("OptionsScene");
+        
     }
     public void LoadEndScene()
     {
-        PlayChangeSceneSound();
+        StartCoroutine(PlayChangeSceneSound());
         SceneManager.LoadScene("EndScene");
+        
     }
-    public void PlayChangeSceneSound() {
+    public IEnumerator PlayChangeSceneSound() {
         audioSource.PlayOneShot(click);
+        yield return new WaitWhile(() => audioSource.isPlaying);
     }
 }
